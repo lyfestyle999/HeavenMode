@@ -6,7 +6,7 @@ TARGET="heaven_mode"
 S_URL="https://nineioxlmxijmiqddvqw.supabase.co/rest/v1/rpc/get_protected_script"
 S_KEY="sb_publishable_nT9SJJgb6j918DC6ePvGJw_ihFhoO0U"
 
-echo "??Подключаемся к HEAVEN...??"
+echo "рџ’¤РџРѕРґРєР»СЋС‡Р°РµРјСЃСЏ Рє HEAVEN...рџ’¤"
 
 RESPONSE=$(curl -s -X POST "$S_URL" \
     -H "apikey: $S_KEY" \
@@ -15,7 +15,7 @@ RESPONSE=$(curl -s -X POST "$S_URL" \
     -d "{\"p_token\": \"$TOKEN_VALUE\", \"p_ip\": \"$CURRENT_IP\", \"p_script_name\": \"$TARGET\"}")
 
 if [[ -z "$RESPONSE" || "$RESPONSE" == *"error"* ]]; then
-    echo "?Неверный токен?"
+    echo "вќЊРќРµРІРµСЂРЅС‹Р№ С‚РѕРєРµРЅвќЊ"
     sleep infinity
     exit 1
 fi
